@@ -1,5 +1,9 @@
 .weather {
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     &__bg {
         position: fixed;
         z-index: -1;
@@ -9,5 +13,14 @@
         object-fit: cover;
         min-height: 100%;
         min-width: 100%;
+    }
+
+    &__title {
+        color: $titleColor;
+        @include fluid-type (320px, 1920px, 60px, 120px);
+        letter-spacing: 2px;
+        text-shadow: 5px 5px 5px #000000;
+        margin: 0 0 60px 0;
+
     }
 }
