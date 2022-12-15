@@ -27,6 +27,7 @@
     &__form {
         max-width: 600px;
         width: 80%;
+        margin: 0 0 40px 0;
     }
 
     &__city {
@@ -42,5 +43,55 @@
         &--error {
             border-color: $inputBorderColorError;
         }
+    }
+
+    &__location {
+        color: $titleColor;
+        @include fluid-type (32px, 1920px, 15px, 45px);
+        font-family: $headerFontFamily;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 2px #000000;
+        margin: 0 0 20px 0;
+    }
+
+    &__info {
+        padding: 20px;
+        border-radius: 30px;
+        background-color: #00000080;
+        color: #ffeeee;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__temp {
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    &__num {
+        font-size: 50px;
+    }
+
+    &__unit {
+        font-size: 20px;
+    }
+
+    &__text {
+        margin: 0 0 6px 0;
+        font-size: 14px;
+
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+    &__error {
+        border-radius: 10px;
+        padding: 10px;
+        color: #ffeeee;
+        background-color: #b40a0ab6;
+        font-weight: 700;
     }
 }
