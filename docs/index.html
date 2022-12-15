@@ -10,8 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Oswald:wght@400;600;700&display=swap"
     rel="stylesheet">
   <title>Weather APP</title>
-  <script type="module" crossorigin src="./assets/index.5d4f6ad1.js"></script>
-  <link rel="stylesheet" href="./assets/index.7ebc112b.css">
+  <script type="module" crossorigin src="./assets/index.4e2642e3.js"></script>
+  <link rel="stylesheet" href="./assets/index.17670daa.css">
 </head>
 
 <body>
@@ -24,9 +24,21 @@
     <!-- playsinline dla appla zeby grało w jednym okienku  -->
     <video src="./video/bg.mp4" autoplay muted loop playsinline class="weather__bg"></video>
     <h1 class="weather__title">Weather APP</h1>
+    <div class="weather__loader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <form action="" class="weather__form">
-      <input type="text" class="weather__city">
+      <input type="text" class="weather__city" value="London">
     </form>
+    <!-- dataFromAPI -->
+    <div class="weather__data">
+
+    </div>
   </section>
 
 
