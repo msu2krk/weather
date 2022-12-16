@@ -1,11 +1,11 @@
 
 ## WEATHER APP 
 
-Simple weather APP
+Simple weather APP.
 Technology stack:
-- Vite
-- SASS
-- CSS
+- HTML
+- CSS / SASS
 - JS
+- VITE
 
-Project live: [click here](https://msu2krk.github.io/weather/)
+Project live preview: [click here](https://msu2krk.github.io/weather/)
