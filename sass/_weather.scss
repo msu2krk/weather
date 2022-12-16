@@ -49,8 +49,8 @@
     &__location {
         color: $titleColor;
         @include fluid-type (32px, 1920px, 15px, 45px);
-        font-family: $headerFontFamily;
-        letter-spacing: 2px;
+        font-family: $locationFontFamily;
+        // letter-spacing: 2px;
         text-align: center;
         text-shadow: 2px 2px 2px #000000;
         margin: 0 0 20px 0;
