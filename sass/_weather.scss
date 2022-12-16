@@ -21,6 +21,7 @@
         letter-spacing: 2px;
         text-shadow: 5px 5px 5px #000000;
         margin: 0 0 60px 0;
+        text-align: center;
 
     }
 
@@ -50,11 +51,14 @@
         @include fluid-type (32px, 1920px, 15px, 45px);
         font-family: $headerFontFamily;
         letter-spacing: 2px;
+        text-align: center;
         text-shadow: 2px 2px 2px #000000;
         margin: 0 0 20px 0;
     }
 
     &__info {
+        width: 80%;
+        margin: 0 auto;
         padding: 20px;
         border-radius: 30px;
         background-color: #00000080;
@@ -97,5 +101,19 @@
 
     &__loader {
         display: none;
+    }
+    
+    &__description {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 30px;
+        background-color: #00000080;
+        color: #ffeeee;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+
     }
 }
