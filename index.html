@@ -1,56 +1,90 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png" />
+    <link
+      rel="manifest"
+      href="/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/favicon/safari-pinned-tab.svg"
+      color="#e2e50e" />
+    <meta
+      name="msapplication-TileColor"
+      content="#2d89ef" />
+    <meta
+      name="theme-color"
+      content="#000000" />
+    <!-- fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Oswald:wght@400;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet" />
+    <title>Weather APP</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#e2e50e">
-  <meta name="msapplication-TileColor" content="#2d89ef">
-  <meta name="theme-color" content="#000000">
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Oswald:wght@400;700&family=Press+Start+2P&display=swap"
-    rel="stylesheet">
-  <title>Weather APP</title>
-</head>
-
-<body>
-  <!-- BEM  metodologia pisania-->
-  <!-- block -->
-  <section class="weather">
-    <!-- element -->
-    <!-- controls wyswietli kontrolki do filmu -->
-    <!-- autoplay pozwala uruchomic film + muted -->
-    <!-- playsinline dla appla zeby grało w jednym okienku  -->
-    <video src="/video/bg.mp4" autoplay muted loop playsinline class="weather__bg"></video>
-    <h1 class="weather__title">Weather APP</h1>
-    <div class="weather__loader">
-      <div class="lds-ellipsis">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+  <body>
+    <!-- BEM  metodologia pisania-->
+    <!-- block -->
+    <section class="weather">
+      <!-- element -->
+      <!-- controls wyswietli kontrolki do filmu -->
+      <!-- autoplay pozwala uruchomic film + muted -->
+      <!-- playsinline dla appla zeby grało w jednym okienku  -->
+      <video
+        src="/video/bg.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        class="weather__bg"></video>
+      <h1 class="weather__title">Weather APP</h1>
+      <div class="weather__loader">
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
-    </div>
-    <form action="" class="weather__form">
-      <input type="text" class="weather__city" value="London">
-    </form>
-    <!-- dataFromAPI -->
-    <div class="weather__data">
+      <form
+        action=""
+        class="weather__form">
+        <input
+          type="text"
+          class="weather__city"
+          value="London" />
+      </form>
+      <!-- dataFromAPI -->
+      <div class="weather__data"></div>
+    </section>
 
-    </div>
-  </section>
-
-
-
-  <script type="module" src="/main.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="/main.js"></script>
+  </body>
 </html>
